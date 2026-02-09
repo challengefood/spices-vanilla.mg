@@ -1,0 +1,12 @@
+/
+├── index.html
+├── style.css
+├── script.js
+└── media/
+    ├── vanilla bean bundle 3d model.gltf
+    ├── 01 vanille gousses (1).jpg
+    ├── IMG_1297.jpg
+    ├── WhatsApp Image 2025-04-30 à 10.01.54_170e550c.jpg
+    ├── WhatsApp Image 2025-04-30 à 10.01.59_10b6d2d6.jpg
+    ├── WhatsApp-Image-2025-05-21-a-15.29.18_c13e2625.jpg
+    └── WhatsApp-Image-2025-08-13-a-16.49.25_52ef66a7 (1).jpg

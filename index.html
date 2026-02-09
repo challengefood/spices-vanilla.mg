@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenge Food | Vanille de Madagascar</title>
+  <meta name="description" content="Vanille de Madagascar - filière locale, qualité premium, traçabilité et export." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Model Viewer pour GLTF -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <!-- Background video -->
+  <div class="bg-video">
+    <video autoplay muted loop playsinline>
+      <source src="media/AQMKYIo3XgiTLjs_SOHvsc-I5bgXDB1mOydpsBLyaTCgey3MbFx2Pr8kfPKzBjv08RK6he0n2hKKIreE4461x6UyjJ1j-vI3oBFX_Kg (1).mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="brand">Challenge Food</a>
+
+    <nav id="nav" class="nav">
+      <a href="#home">Accueil</a>
+      <a href="#story">Notre histoire</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#quality">Qualité</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="menu-btn" aria-label="menu">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker">Vanille de Madagascar</p>
+        <h1>Une vanille premium, traçable et ancrée dans les communautés locales</h1>
+        <p class="lead">
+          Nous mettons en valeur la vanille naturelle de Madagascar avec une sélection rigoureuse,
+          un séchage maîtrisé et une préparation adaptée aux exigences d’export.
+        </p>
+        <div class="cta-row">
+          <a href="#gallery" class="btn btn-primary">Voir la galerie</a>
+          <a href="#contact" class="btn btn-outline">Demander un devis</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Aperçu 3D</h3>
+        <model-viewer
+          src="media/vanilla bean bundle 3d model.gltf"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          exposure="1"
+          ar
+          style="width:100%;height:360px;background:transparent;">
+        </model-viewer>
+        <p class="small">
+          Si le modèle ne s’affiche pas sur ton navigateur, garde l’image produit comme visuel principal.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section id="story" class="section">
+    <div class="container card">
+      <h2>Notre modèle vanille</h2>
+      <p>
+        Notre approche met l’accent sur la vanille : sélection des gousses, tri, affinage, conditionnement et contrôle visuel.
+        Nous valorisons les producteurs locaux et la qualité constante pour les clients professionnels.
+      </p>
+
+      <div class="timeline">
+        <div><span>01</span> Pollinisation & culture</div>
+        <div><span>02</span> Récolte à maturité</div>
+        <div><span>03</span> Échaudage & étuvage</div>
+        <div><span>04</span> Séchage progressif</div>
+        <div><span>05</span> Affinage & tri final</div>
+        <div><span>06</span> Conditionnement export</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Galerie vanille</h2>
+        <p>Visuels terrain, transformation et lots de vanille.</p>
+      </div>
+
+      <div class="masonry">
+        <figure class="item">
+          <img src="media/01 vanille gousses (1).jpg" alt="Gousses de vanille">
+        </figure>
+        <figure class="item">
+          <img src="media/IMG_1297.jpg" alt="Lots de vanille en paniers">
+        </figure>
+        <figure class="item">
+          <img src="media/WhatsApp Image 2025-04-30 à 10.01.54_170e550c.jpg" alt="Site local">
+        </figure>
+        <figure class="item">
+          <img src="media/WhatsApp Image 2025-04-30 à 10.01.59_10b6d2d6.jpg" alt="Communauté locale">
+        </figure>
+        <figure class="item">
+          <img src="media/WhatsApp-Image-2025-05-21-a-15.29.18_c13e2625.jpg" alt="Transformation terrain">
+        </figure>
+        <figure class="item">
+          <img src="media/WhatsApp-Image-2025-08-13-a-16.49.25_52ef66a7 (1).jpg" alt="Tri de la vanille">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality -->
+  <section id="quality" class="section">
+    <div class="container quality-grid">
+      <article class="card">
+        <h3>Spécifications (exemple)</h3>
+        <ul>
+          <li>Origine : Madagascar</li>
+          <li>Type : Vanille préparée (Gourmet / TK selon lot)</li>
+          <li>Taux d’humidité : selon cahier des charges client</li>
+          <li>Tri : longueur, aspect, souplesse, arôme</li>
+          <li>Conditionnement : selon demande (vrac / bundles)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Engagement qualité</h3>
+        <ul>
+          <li>Contrôle visuel de chaque lot</li>
+          <li>Traçabilité documentaire</li>
+          <li>Échantillonnage avant expédition</li>
+          <li>Communication rapide avec les acheteurs</li>
+          <li>Adaptation aux besoins B2B</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container card">
+      <h2>Demande de devis</h2>
+      <p>Envoie ton besoin (volume, qualité, destination, incoterm, délai).</p>
+
+      <form class="form" onsubmit="event.preventDefault(); alert('Demande envoyée ✅');">
+        <div class="row">
+          <input type="text" placeholder="Nom / Société" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="row">
+          <input type="text" placeholder="Produit (Vanille Gourmet, TK...)">
+          <input type="text" placeholder="Quantité estimée (kg)">
+        </div>
+        <textarea rows="5" placeholder="Message détaillé"></textarea>
+        <button class="btn btn-primary" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Challenge Food Madagascar — Vanille</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
